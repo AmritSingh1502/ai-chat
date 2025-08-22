@@ -17,9 +17,10 @@ This project was created using `bun init` in bun v1.2.8. [Bun](https://bun.sh) i
 
 01. init project
 02. create a bunch of accounts
-    a. rezorplay
+    a. razorplay
     b. openrouter
     c. domain(godady)
+    d. emails - twilio/postmark
 03. Backend (openrouter)
     Auth
     conversation storing
