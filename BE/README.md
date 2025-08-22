@@ -32,3 +32,10 @@ call out - postgress/convex
         better auth(debatable or clerk or inhouse auth)
         bun express
         prisma
+
+
+        chat endpoint
+        type safe (zod)
+        openrouter configuration
+        inmemorystore
+

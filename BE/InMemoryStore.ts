@@ -20,7 +20,7 @@ export class InMemoryStore {
                     delete this.store[key];
                 }
             });
-        },EVICTION_CLOCK_TIME)
+        },EVICTION_CLOCK_TIME);
     }
 
     private destroy() {
@@ -43,6 +43,13 @@ export class InMemoryStore {
                 evictionTime: Date.now() + EVICTION_TIME
             }
         }
+        
 
+        this.store[conversationId]?.messages?.push(message);
+
+    }
+
+    get(conversationId: string): Message[] {
+        return this.store[conversationId]?.messages ?? [];
     }
 }
